@@ -4,38 +4,204 @@
 Image Mapped Input Problem
 ###########################
 
-In an image mapped input problem, students click inside a defined area in an image. You define this area by including coordinates in the body of the problem.
+In an image mapped input problem, also known as a "pointing on a picture"
+problem, students click inside a defined area in an image. You define this
+area by including coordinates in the body of the problem.
+
+.. image:: ../../../shared/building_and_running_chapters/Images/ImageMappedInput-Simple.png
+ :width: 500
+ :alt: Image of an image mapped input problem
+
+You can specify one or more rectangular areas or one irregular area. 
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ImageMappedInputExample.png
- :alt: Image of an image mapped input problem
 
 ****************************************
 Create an Image Mapped Input Problem
 ****************************************
 
-To create a image mapped input problem:
+To create an image mapped input problem:
 
+#. :ref:`Determine the coordinate points<Determine Coordinates>` for each
+   corner of the area that you want to define.
+#. :ref:`Create the problem in Studio<Create an IMI Problem in Studio>`.
+
+.. _Determine Coordinates:
+
+=================================
+Determine Coordinates
+=================================
+
+You can use an image editing tool such as Microsoft Paint to determine the
+size of your image in pixels, and then determine the coordinate pairs that
+define the area or areas where you want students to click.
+
+All coordinates start with (0,0) in the top left corner of the image and
+increase in value toward the bottom right corner, similar to the progression
+of reading English. The two coordinate pairs form the two opposite corners of
+a box that a student clicks inside.
+
+*  To specify a rectangular area, you only need two coordinate pairs: the
+   upper-left corner and the lower-right corner. 
+
+* To specify more than one rectangle, you need the coordinate pairs for the upper-
+  left and lower-right corner of each rectangle. 
+
+* To specify an irregular region, you need three or more coordinate points.
+  You can enter these coordinate pairs in
+  any order. 
+
+.. _Create an IMI Problem in Studio:
+
+=================================
+Create the Problem in Studio
+=================================
+
+#. In Studio, upload your image to the **Files & Uploads** page.
 #. In the unit where you want to create the problem, click **Problem**
    under **Add New Component**, and then click the **Advanced** tab.
 #. Click **Image Mapped Input**.
 #. In the component that appears, click **Edit**.
-#. In the component editor, replace the example code with your own code.
+#. In the component editor, replace the example problem text with your own text. 
+#. In the ``<imageinput>`` element:
+
+   #. Replace the example file path in the ``src`` attribute with the file
+      path for your image.
+
+   #. Replace the example values for the ``width`` and ``height`` attributes
+      with the dimensions for your image. 
+
+   #. Modify the example ``rectangle`` attribute to reflect the shape and size
+      of the area that you want to specify. For more information, see
+      :ref:`Specify a Rectangular Area`, :ref:`Specify Multiple Rectangular
+      Areas`, or :ref:`Specify an Irregular Area`.
+
 #. Click **Save**.
+
+.. _Specify a Rectangular Area:
+
+Specify a Rectangular Area
+****************************************
+
+To specify a rectangular area, locate the ``rectangle`` attribute in the
+``<imageinput>`` element.
+
+* Specify the coordinate pair for the upper-left and lower-right corners of
+  the rectangle, separating the x and y values with a comma.
+* Surround each coordinate pair with parentheses.
+* Use a hyphen to separate the coordinate pairs.
+* Surround the set of coordinate pairs with quotation marks (").
+
+For example, the following ``rectangle`` attribute creates one rectangle:
+
+``rectangle="(338,98)-(412,168)"``
 
 **Problem Code**:
 
 .. code-block:: xml
 
-  <problem>
-    <p><b>Example Problem</b></p>
-     <startouttext/>
-      <p>In the image below, click the triangle.</p>
-      <endouttext/>
-      <imageresponse>
-      <imageinput src="/static/threeshapes.png" width="220" height="150" rectangle="(80,40)-(130,90)" />
-      </imageresponse>
-  </problem>
+<problem> 
 
+  <p>What country is home to the Pyramids as well as the cities of
+  Cairo and Memphis? Click the country on the map below.</p> 
+
+  <imageresponse>
+    <imageinput src="/static/Africa.png" width="600" height="638"
+  rectangle="(338,98)-(412,168)" alt="Map of Africa" />
+  </imageresponse>
+ 
+  <solution> 
+    <div class="detailed-solution"> 
+  
+      <p>Explanation</p> 
+  
+      <p>Egypt is home to not only the Pyramids, Cairo, and Memphis, but also the
+  Sphinx and the ancient Royal Library of Alexandria.</p>
+  
+    </div> 
+  </solution> 
+
+</problem>
+
+.. _Specify Multiple Rectangular Areas:
+
+Specify Multiple Rectangular Areas
+****************************************
+
+To specify multiple rectangular areas, locate the ``rectangle`` attribute in the
+``<imageinput>`` element.
+
+* Specify the coordinate pair for the upper-left and lower-right corners of
+  each rectangle, separating the x and y values with a comma.
+* Surround each coordinate pair with parentheses.
+* Use a hyphen (-) to separate the coordinate pairs.
+* Separate each rectangle with a semicolon (;).
+* Surround the entire set of coordinates with quotation marks (").
+
+For example, the following ``rectangle`` attribute creates four rectangles:
+
+.. code-block:: xml
+
+``rectangle="(62,94)-(262,137);(306,41)-(389,173);(89,211)-(187,410);(263,256)
+-(346,340)"``
+
+**Problem Code**:
+
+.. code-block:: xml
+
+<problem>
+  
+  <p>In the following image, click inside any of the green rectangles.</p>
+    
+    <imageresponse> 
+
+      <imageinput src="/static/imageresponse_multipleregions.jpg" width="450"
+        height="450" rectangle="(62,94)-(262,137);(306,41)-(389,173);(89,211)-
+        (187,410);(263,256)-(346,340)" alt="Field with four rectangles" />
+        
+    </imageresponse>
+    
+</problem>
+
+.. _Specify an Irregular Area:
+
+Specify an Irregular Area
+****************************************
+
+To specify an irregular area, locate the ``rectangle`` attribute in the
+``<imageinput>`` element.
+
+* Change ``rectangle`` to ``region``.
+* Specify two or more coordinate points in any order. The problem creates
+  the simplest possible polygon from the set of coordinate points.
+* Enter each coordinate pair in brackets ([]). **Do not use parentheses**.
+* Separate each set of points with a comma (,) and a space. 
+* Enclose the whole list of coordinate points in brackets ([]).
+* Surround the outer brackets with quotation marks (").
+
+For example, the following ``regions`` attribute creates a pentagon.
+
+.. code-block:: xml
+
+``regions="[[219,86], [305,192], [305,381], [139,381], [139,192]]"``
+
+**Problem Code**:
+
+.. code-block:: xml
+
+<problem>
+
+  <p>In the following image, click inside the pentagon.</p>
+  
+  <imageresponse> 
+
+    <imageinput src="/static/imageresponse_irregularregions.jpg" width="450"
+    height="450" regions="[[219,86], [305,192], [305,381], [139,381],
+    [139,192]]" alt ="Field with a pentagon" />
+
+  </imageresponse>
+
+</problem>
 
 .. _Image Mapped Input Problem XML:
 
@@ -50,11 +216,9 @@ Template
 .. code-block:: xml
 
   <problem>
-    <startouttext/>
-      <p>In the image below, click the triangle.</p>
-    <endouttext/>
+    <p>Problem text</p>
         <imageresponse>
-         <imageinput src="IMAGE FILE PATH" width="NUMBER" height="NUMBER" rectangle="(X-AXIS,Y-AXIS)-(X-AXIS,Y-AXIS)" />
+         <imageinput src="IMAGE FILE PATH" width="NUMBER" height="NUMBER" rectangle="(X-AXIS,Y-AXIS)-(X-AXIS,Y-AXIS)" alt="DESCRIPTION OF IMAGE" />
         </imageresponse>
   </problem>
 
@@ -79,7 +243,7 @@ Indicates that the problem is an image mapped input problem.
 
 **Tag:** ``<imageinput>``
 
-Specifies the image file and the region in the file that the student must click.
+Specifies the image file and the area in the file where students must click.
 
   Attributes
 
@@ -88,14 +252,17 @@ Specifies the image file and the region in the file that the student must click.
 
       * - Attribute
         - Description
-      * - src (required)
+      * - ``src`` (required)
         - The URL of the image
-      * - height (required)
+      * - ``height`` (required)
         - The height of the image, in pixels
-      * - width (required)
+      * - ``width`` (required)
         - The width of the image, in pixels
-      * - rectangle (required)
-        - An attribute with four embedded values in the format (<start_width>,<start_height>)-(<end_width>,<end-height>). All coordinates start with (0,0) in the top left corner and increase in value toward the bottom right corner, very similar to the progression of reading English. The two coordinates defined form the two opposite corners of a box which a student can click inside of.
+      * - ``rectangle`` (required) (or, for irregular areas, ``region``)
+        - An attribute with two or more coordinate pairs that define the area
+          where students should click
+      * - ``alt`` (required)
+        - A description of the image, used for accessibility
 
   Children
   
