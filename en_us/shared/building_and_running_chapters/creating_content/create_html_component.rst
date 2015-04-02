@@ -108,15 +108,24 @@ descriptions.
    heading 2, or paragraph.
 #. Choose a font family for selected text, such as Arial, Courier New, or Times
    New Roman.
-#. Format selected text in bold.
-#. Format selected text in italics.
-#. Underline selected text.
-#. Apply a color to the selected text.
-#. Format selected text as code.
-#. Create a bulleted list.
-#. Create a numbered list.
+#. Format selected text in bold. The editor inserts ``<strong>`` tags around
+   the selected text.
+#. Format selected text in italics. The editor inserts ``<em>`` tags around the
+   selected text.
+#. Underline the selected text. The editor encloses the selected text in
+   the tag ``<span style="text-decoration: underline;">``.
+#. Apply a color to the selected text. The editor encloses the selected text in
+   the tag ``<span style="color: color-hex-code;">``.
+#. Format selected text as a code block. The editor inserts ``<code>`` tags
+   around the selected text, which is then displayed in a monospace font.
+#. Create a bulleted list. The editor inserts ``<ul>`` tags
+   around the selected text, and encloses each paragraph in ``<li>`` tags.
+#. Create a numbered list. The editor inserts ``<ol>`` tags
+   around the selected text, and encloses each paragraph in ``<li>`` tags.
 #. Decrease and increased the indentation of the selected paragraph.
-#. Format the selected paragraph as a blockquote.
+#. Format the selected paragraph as a blockquote. The editor inserts
+   ``<blockquote>`` tags around the selected text, which is then displayed as a
+   separate paragraph in a monospace font.
 #. Create a link from the selected text. See :ref:`Add a Link in an HTML
    Component`.
 #. Delete the current link.
