@@ -183,6 +183,18 @@ site where you post the videos may have to handle a lot of traffic.
  play your video, we **strongly** recommend that you use .mp4 or .webm format.)
  EdX cannot support videos that you post on sites such as Vimeo.
 
+If you (or your beta testers or learners) encounter an error when you view a
+course video, it might be the result of one of these problems.
+
+* Verify that the browser is up to date. For example, some older versions of
+  Mozilla Firefox did not play .mp4 video files. This problem does not occur
+  in more recent versions of this browser.
+
+* Verify that the MIME type is correctly set on the host site. For example,
+  make sure that the HTTP header content-type is set to video/mp4 for an .mp4,
+  or to video/webm for a .webm. Internet Explorer 9 and 10 browsers do not
+  play videos if the MIME type is not set.
+
 .. _Create a Video Component:
 
 ********************************
@@ -201,7 +213,7 @@ Step 4. Create a Video Component
    You replace the default values with your own. 
    
 3. In the **Component Display Name** field, enter an identifying name for this
-   video. Students see this name as a header for the video and when they hover
+   video. Students see this name as a header for the video and when they place
    the cursor over the unit in the course ribbon.
 
 #. In the **Default Video URL** field, enter the URL of the video. Example
@@ -407,8 +419,8 @@ Additional Transcripts
 By default, a .txt file is created when you upload an .srt file, and students
 can download an .srt or .txt transcript when you set **Download Transcript
 Allowed** to **True**. The **Download Transcript** button appears below the
-video, and students see the .srt and .txt options when they hover over the
-button.
+video, and students see the .srt and .txt options when they move the cursor
+over the button.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/Video_DownTrans_srt-txt.png
    :width: 500
