@@ -10,11 +10,23 @@ area by including coordinates in the body of the problem.
 
 .. image:: ../../../shared/building_and_running_chapters/Images/ImageMappedInput-Simple.png
  :width: 500
- :alt: Image of an image mapped input problem
+ :alt: Problem that asks learners to click inside Egypt on a map of Africa
 
-You can specify one or more rectangular areas or one irregular area. 
+You can specify one or more rectangular areas.
 
-.. image:: ../../../shared/building_and_running_chapters/Images/ImageMappedInputExample.png
+.. image:: ../../../shared/building_and_running_chapters/Images/ImgMapInput_Mult.png
+ :width: 350
+ :alt: Problem that asks students to click inside one of three rectangles
+
+You can also specify one non-rectangular area.
+
+.. image:: ../../../shared/building_and_running_chapters/Images/ImgMapInput_Irreg.png
+  :width: 500
+  :alt: Problem that asks learners to click inside a pentagon
+
+.. note:: When you create a problem that contains an image, you must include
+ alt text for your image to make the image accessible. For more information
+ about alt text, see :ref:`Guidelines for Creating Accessible Content`.
 
 ****************************************
 Create an Image Mapped Input Problem
@@ -22,34 +34,36 @@ Create an Image Mapped Input Problem
 
 To create an image mapped input problem:
 
-#. :ref:`Determine the coordinate points<Determine Coordinates>` for each
-   corner of the area that you want to define.
+#. :ref:`Determine the coordinate pairs<Determine Coordinates>` for each
+   point of the area that you want to define.
 #. :ref:`Create the problem in Studio<Create an IMI Problem in Studio>`.
 
 .. _Determine Coordinates:
 
 =================================
-Determine Coordinates
+Determine Coordinate Pairs
 =================================
 
 You can use an image editing tool such as Microsoft Paint to determine the
 size of your image in pixels, and then determine the coordinate pairs that
 define the area or areas where you want students to click.
 
-All coordinates start with (0,0) in the top left corner of the image and
-increase in value toward the bottom right corner, similar to the progression
-of reading English. The two coordinate pairs form the two opposite corners of
-a box that a student clicks inside.
+The coordinate pairs for all images start with (0,0) in the upper-left corner
+of the image and increase in value toward the lower-right corner, similar to
+the progression of reading English. Coordinate pairs specify points on the
+edge of the region that you want to define. Studio creates the simplest
+possible polygon based on these coordinate pairs.
 
-*  To specify a rectangular area, you only need two coordinate pairs: the
-   upper-left corner and the lower-right corner. 
+* To specify a rectangular area, you only need two coordinate pairs: the
+  upper-left corner and the lower-right corner.
 
-* To specify more than one rectangle, you need the coordinate pairs for the upper-
-  left and lower-right corner of each rectangle. 
+* To specify more than one rectangle, you need the coordinate pairs for the
+  upper-left and lower-right corners of each rectangle.
 
-* To specify an irregular region, you need three or more coordinate points.
-  You can enter these coordinate pairs in
-  any order. 
+* To specify an irregular region, you need three or more coordinate pairs. For
+  example, for a triangle, you need three coordinate pairs. For an octagon,
+  you need eight coordinate pairs. You can enter the coordinate pairs in any
+  order.
 
 .. _Create an IMI Problem in Studio:
 
@@ -57,13 +71,15 @@ a box that a student clicks inside.
 Create the Problem in Studio
 =================================
 
-#. In Studio, upload your image to the **Files & Uploads** page.
+#. In Studio, upload your image to the **Files & Uploads** page, and make a
+   note of the file path for the image. For more information, see :ref:`Add
+   Files to a Course`.
 #. In the unit where you want to create the problem, click **Problem**
    under **Add New Component**, and then click the **Advanced** tab.
 #. Click **Image Mapped Input**.
 #. In the component that appears, click **Edit**.
 #. In the component editor, replace the example problem text with your own text. 
-#. In the ``<imageinput>`` element:
+#. In the ``<imageinput>`` element, follow these steps.
 
    #. Replace the example file path in the ``src`` attribute with the file
       path for your image.
@@ -83,7 +99,7 @@ Create the Problem in Studio
 Specify a Rectangular Area
 ****************************************
 
-To specify a rectangular area, locate the ``rectangle`` attribute in the
+To specify a rectangular area, edit the ``rectangle`` attribute in the
 ``<imageinput>`` element.
 
 * Specify the coordinate pair for the upper-left and lower-right corners of
@@ -91,8 +107,12 @@ To specify a rectangular area, locate the ``rectangle`` attribute in the
 * Surround each coordinate pair with parentheses.
 * Use a hyphen to separate the coordinate pairs.
 * Surround the set of coordinate pairs with quotation marks (").
+* Include alt text for your image to make the image accessible. For more
+  information about alt text, see :ref:`Guidelines for Creating Accessible
+  Content`.
 
-For example, the following ``rectangle`` attribute creates one rectangle:
+For example, the following ``rectangle`` attribute creates one rectangle from
+two coordinate pairs:
 
 ``rectangle="(338,98)-(412,168)"``
 
@@ -100,7 +120,7 @@ For example, the following ``rectangle`` attribute creates one rectangle:
 
 .. code-block:: xml
 
-<problem> 
+ <problem> 
 
   <p>What country is home to the Pyramids as well as the cities of
   Cairo and Memphis? Click the country on the map below.</p> 
@@ -121,14 +141,14 @@ For example, the following ``rectangle`` attribute creates one rectangle:
     </div> 
   </solution> 
 
-</problem>
+ </problem>
 
 .. _Specify Multiple Rectangular Areas:
 
 Specify Multiple Rectangular Areas
 ****************************************
 
-To specify multiple rectangular areas, locate the ``rectangle`` attribute in the
+To specify multiple rectangular areas, edit the ``rectangle`` attribute in the
 ``<imageinput>`` element.
 
 * Specify the coordinate pair for the upper-left and lower-right corners of
@@ -137,51 +157,51 @@ To specify multiple rectangular areas, locate the ``rectangle`` attribute in the
 * Use a hyphen (-) to separate the coordinate pairs.
 * Separate each rectangle with a semicolon (;).
 * Surround the entire set of coordinates with quotation marks (").
+* Include alt text for your image to make the image accessible. For more
+  information about alt text, see :ref:`Guidelines for Creating Accessible
+  Content`.
 
-For example, the following ``rectangle`` attribute creates four rectangles:
+For example, the following ``rectangle`` attribute creates three rectangles:
 
-.. code-block:: xml
-
-``rectangle="(62,94)-(262,137);(306,41)-(389,173);(89,211)-(187,410);(263,256)
--(346,340)"``
+``rectangle="(62,94)-(262,137);(306,41)-(389,173);(89,211)-(187,410)"``
 
 **Problem Code**:
 
 .. code-block:: xml
 
-<problem>
+ <problem>
   
-  <p>In the following image, click inside any of the green rectangles.</p>
+  <p>In the following image, click inside any of the rectangles.</p>
     
     <imageresponse> 
 
-      <imageinput src="/static/imageresponse_multipleregions.jpg" width="450"
+      <imageinput src="/static/imageresponse_multipleregions.png" width="450"
         height="450" rectangle="(62,94)-(262,137);(306,41)-(389,173);(89,211)-
-        (187,410);(263,256)-(346,340)" alt="Field with four rectangles" />
+        (187,410)" alt="Three rectangles on a white background" />
         
     </imageresponse>
     
-</problem>
+ </problem>
 
 .. _Specify an Irregular Area:
 
 Specify an Irregular Area
 ****************************************
 
-To specify an irregular area, locate the ``rectangle`` attribute in the
+To specify an irregular area, edit the ``rectangle`` attribute in the
 ``<imageinput>`` element.
 
 * Change ``rectangle`` to ``region``.
-* Specify two or more coordinate points in any order. The problem creates
-  the simplest possible polygon from the set of coordinate points.
+* Specify three or more coordinate points in any order.
 * Enter each coordinate pair in brackets ([]). **Do not use parentheses**.
 * Separate each set of points with a comma (,) and a space. 
 * Enclose the whole list of coordinate points in brackets ([]).
 * Surround the outer brackets with quotation marks (").
+* Include alt text for your image to make the image accessible. For more
+  information about alt text, see :ref:`Guidelines for Creating Accessible
+  Content`.
 
 For example, the following ``regions`` attribute creates a pentagon.
-
-.. code-block:: xml
 
 ``regions="[[219,86], [305,192], [305,381], [139,381], [139,192]]"``
 
@@ -189,7 +209,7 @@ For example, the following ``regions`` attribute creates a pentagon.
 
 .. code-block:: xml
 
-<problem>
+ <problem>
 
   <p>In the following image, click inside the pentagon.</p>
   
@@ -197,11 +217,12 @@ For example, the following ``regions`` attribute creates a pentagon.
 
     <imageinput src="/static/imageresponse_irregularregions.jpg" width="450"
     height="450" regions="[[219,86], [305,192], [305,381], [139,381],
-    [139,192]]" alt ="Field with a pentagon" />
+    [139,192]]" alt ="A series of 10 shapes including a circle, triangle,
+    trapezoid, pentagon, star, and octagon" />
 
   </imageresponse>
 
-</problem>
+ </problem>
 
 .. _Image Mapped Input Problem XML:
 
@@ -216,10 +237,17 @@ Template
 .. code-block:: xml
 
   <problem>
+
     <p>Problem text</p>
+
         <imageresponse>
-         <imageinput src="IMAGE FILE PATH" width="NUMBER" height="NUMBER" rectangle="(X-AXIS,Y-AXIS)-(X-AXIS,Y-AXIS)" alt="DESCRIPTION OF IMAGE" />
+
+         <imageinput src="IMAGE FILE PATH" width="NUMBER" height="NUMBER"
+         rectangle="(X-AXIS,Y-AXIS)-(X-AXIS,Y-AXIS)" alt="DESCRIPTION OF
+         IMAGE" />
+
         </imageresponse>
+
   </problem>
 
 =====

@@ -3,6 +3,20 @@ Change Log
 ############
 
 *****************
+April 2015
+*****************
+
+.. list-table::
+   :widths: 10 70
+   :header-rows: 1
+
+   * - Date
+     - Change
+   * - 4/2/15
+     - Added information about specifying multiple and irregular regions in
+       image mapped input problems to the :ref:`Image Mapped Input` topic.
+
+*****************
 February 2015
 *****************
 
