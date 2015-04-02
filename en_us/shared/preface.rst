@@ -357,7 +357,7 @@ From edX
 
 To help you get started with the edX learning experience, edX offers a course
 (of course!). You can find the edX Demo_ course on the edX web site. EdX also
-maintains a list of frequently_ asked questions and answers.
+maintains a list of `frequently asked questions`_  and answers.
 
 If you still have questions or suggestions, you can get help from the edX
 support team: click **Contact** at the bottom of any edX web page or send an
@@ -396,7 +396,7 @@ edX Global Community meetup_ group.
 .. _edx/edx-analytics-dashboard: https://github.com/edx/edx-analytics-dashboard
 .. _dashboard: http://dash.openedx.org/age.html
 .. _Demo: http://www.edx.org/course/edx/edx-edxdemo101-edx-demo-1038
-.. _frequently: http://www.edx.org/student-faq
+.. _frequently asked questions: http://www.edx.org/student-faq
 .. _meetup: http://www.meetup.com/edX-Global-Community/
 .. _openedx-ops: http://groups.google.com/forum/#!forum/openedx-ops
 .. _openedx-translation: http://groups.google.com/forum/#!forum/openedx-translation
