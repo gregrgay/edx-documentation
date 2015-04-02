@@ -6,12 +6,12 @@
 edX Browser Support
 ####################
 
-The edX Platform runs on the following browsers:
+The edX Platform runs on the following browsers.
 
-* `Internet Explorer <https://microsoft.com/ie>`_
 * `Chrome <https://www.google.com/chrome>`_
 * `Safari <https://www.apple.com/safari>`_
 * `Firefox <https://mozilla.org/firefox>`_
+* `Internet Explorer <https://microsoft.com/ie>`_
 
 The edX Platform is routinely tested and verified on the current
 and previous version of each of these browsers. We generally encourage the
