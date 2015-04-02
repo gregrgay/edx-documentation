@@ -83,8 +83,8 @@ data directory. It may also contain other files.
  
 If your course uses legacy layout structures, you may not be able to edit the
 course in Studio, although it will probably appear correctly on Edge. To make
-sure that your course is completely editable, ensure that all of your material
-is embedded in a unit.
+sure that your course is completely editable, ensure that all components are
+embedded in a unit.
  
 The import process has five stages. During the first two stages, you must stay
 on the Course Import page. You can leave this page after the Unpacking stage
@@ -98,3 +98,9 @@ To import a course:
 #. Locate the file that you want, and then click **Open**.
 #. Click **Replace my course with the one above**.
 
+.. note:: 
+ When you import a course, important dates such as the course start date and
+ time, are overwritten. After the import is complete, you should check
+ important dates to ensure they are set as intended. For more information, see
+ :ref:`Set Important Dates for Your Course`.
+ 
