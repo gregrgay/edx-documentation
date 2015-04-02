@@ -206,12 +206,15 @@ To receive and share information by email, researchers can join the
 `openedx-analytics`_ Google group to ask questions and participate in 
 discussions with peers at other edX partner organizations and edX staffers.
 
-Wiki
+Wikis
 -------------------
 
 The edX Analytics team maintains the `Open edX Analytics`_ wiki, which includes
 links to periodic release notes, the Open edX Public Product Roadmap, and other
 resources for researchers.
+
+The `edx-tools`_ wiki lists publicly shared tools for working with the edX
+platform, including scripts for data analysis and reporting.
 
 .. _Resources for Developers:
 
@@ -304,6 +307,9 @@ is working on with the community.
 The pull request dashboard_  is a visualization of the count and age of the
 pull requests (PRs) assigned to teams at edX. Click the bars in this chart to
 get more information about the PRs.
+
+The `edx-tools`_ wiki lists publicly shared tools for working with the edX
+platform, including scripts and helper utilities.
 
 .. _Resources for Open edX:
 
@@ -425,3 +431,4 @@ edX Global Community meetup_ group.
 .. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/
 .. _docs@edx.org: docs@edx.org
 .. _edX documentation: http://docs.edx.org
+.. _edx-tools: https://github.com/edx/edx-tools/wiki
