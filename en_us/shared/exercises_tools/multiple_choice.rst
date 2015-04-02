@@ -500,8 +500,7 @@ Lists an answer option.
      * - correct (at least one required)
        - Indicates a correct or incorrect answer. When the attribute is set to
          "true", the choice is a correct answer. When the attribute is set to
-         "false", the choice is an incorrect answer. Only one choice can be a
-         correct answer.
+         "false", the choice is an incorrect answer. 
      * - name
        - A unique name that the back end uses to refer to the choice.
 
