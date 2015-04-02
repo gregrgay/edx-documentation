@@ -190,10 +190,18 @@ course video, it might be the result of one of these problems.
   Mozilla Firefox did not play .mp4 video files. This problem does not occur
   in more recent versions of this browser.
 
-* Verify that the MIME type is correctly set on the host site. For example,
-  make sure that the HTTP header content-type is set to video/mp4 for an .mp4,
-  or to video/webm for a .webm. Internet Explorer 9 and 10 browsers do not
-  play videos if the MIME type is not set.
+  For more information, see `Media formats supported by the HTML audio and
+  video elements`_.
+
+* Verify that file metadata, specifically the MIME type, is correctly set on
+  the host site. Internet Explorer 9 and 10 browsers do not play videos if the
+  MIME type is not set. For example, make sure that the HTTP header Content-
+  Type is set to video/mp4 for an .mp4 file, or to video/webm for a .webm
+  file.
+
+  As an example, the *Console User Guide* for the Amazon Simple Storage Service
+  provides this information about `editing object metadata`_. 
+
 
 .. _Create a Video Component:
 
@@ -553,3 +561,5 @@ in the video component.
 .. _Creating Videos: https://courses.edx.org/courses/edX/edX101/2014/courseware/c2a1714627a945afaceabdfb651088cf/9dd6e5fdf64b49a89feac208ab544760/
 
 .. _edX101 Overview of Creating an edX Course: https://www.edx.org/node/5496#.VH8p51fF_FA
+.. _Media formats supported by the HTML audio and video elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#MP4_H.264_(AAC_or_MP3)
+.. _editing object metadata: http://docs.aws.amazon.com/AmazonS3/latest/UG/EditingtheMetadataofanObject.html
