@@ -263,8 +263,8 @@ To add a link to a website:
 
 #. Click the link icon in the toolbar.
 
-#. In the **Insert link** dialog box, enter the URL of the website that you want
-   in the **URL** field.
+#. In the **Insert link** dialog box, enter the URL of the website that you
+   want in the **URL** field.
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_Website.png
     :alt: Image of the Insert link dialog box
@@ -334,8 +334,12 @@ You can add a link in an HTML component to any file that is uploaded for the
 course. For more information about uploading files, see :ref:`Add Files to a
 Course`.
 
-#. On the **Files & Uploads** page, copy the **Studio** URL of the file.
+.. tip:: 
+ When adding links to files, open the HTML component and the **Files &
+ Uploads** page in separate browser windows. You can then more quickly copy and
+ paste file URLs.
 
+#. On the **Files & Uploads** page, copy the **Studio** URL of the file.
 
   .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Link_File.png
    :alt: Image of Files and Uploads page with the Studio URL field circled 
@@ -383,8 +387,13 @@ see :ref:`Add Files to a Course`.
 To add an image, you'll need the URL of the image that you uploaded to the
 course. You'll then create a link to the image in the HTML component.
 
-#. On the **Files & Uploads** page, copy the **Studio** URL of the image that you
-   want. For an example illustration, see :ref:`Add a Link to a File`.
+.. tip:: 
+ When adding images, open the HTML component and the **Files &
+ Uploads** page in separate browser windows. You can then more quickly copy and
+ paste image URLs.
+
+#. On the **Files & Uploads** page, copy the **Studio** URL of the image that
+   you want. For an example illustration, see :ref:`Add a Link to a File`.
 
   .. note:: 
    You must use the **Studio** URL to add the image, not the **Web** URL.
