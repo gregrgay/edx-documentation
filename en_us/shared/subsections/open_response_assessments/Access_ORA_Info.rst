@@ -197,7 +197,7 @@ grading>`, locate a specific submission by following these steps.
 #. Contact your edX program manager to request a data download of ORA
    responses for the assignment.
 
-   You will receive the download in a spreadsheet or .cvs file format.
+   You will receive the download in a spreadsheet or .csv file format.
 
 #. Search the spreadsheet for text that matches the sample text from the
    inappropriate post.
