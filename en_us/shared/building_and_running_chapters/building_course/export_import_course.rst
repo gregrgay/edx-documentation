@@ -99,8 +99,8 @@ To import a course:
 #. Click **Replace my course with the one above**.
 
 .. note:: 
- When you import a course, important dates such as the course start date and
- time, are overwritten. After the import is complete, you should check
- important dates to ensure they are set as intended. For more information, see
+ When you import a course, important dates, such as the course start date and
+ time, are overwritten. After the import is complete, you should check dates to
+ ensure they are set as intended. For more information, see
  :ref:`Set Important Dates for Your Course`.
  

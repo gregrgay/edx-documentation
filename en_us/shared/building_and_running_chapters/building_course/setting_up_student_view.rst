@@ -101,11 +101,13 @@ wide discussion topics as soon as they enroll in your course. For more
 information about course-wide discussion topics, see :ref:`Create CourseWide
 Discussion Topics`.
 
-We recommend that you set the start time of your course to early in the
-day, generally 12:00 UTC or earlier. Learners often expect the course to be
-available on the start date and try to access course content during the day.
+We recommend that you set the start time of your course to early in the day,
+generally 12:00 UTC or earlier. Learners often expect the course to be
+available on the start date in their own time zones and try to access course
+content during the day.
 
-The following example shows the course start date and time on the course summary page:
+The following example shows the course start date and time on the course
+summary page:
 
 .. image:: ../../../shared/building_and_running_chapters/Images/about-page-course-start.png
  :alt: An image of the course About page, with the start date circled.

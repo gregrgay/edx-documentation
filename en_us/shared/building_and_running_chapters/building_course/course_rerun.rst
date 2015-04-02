@@ -50,11 +50,10 @@ any way.
    * - Wiki contributions
      - No.
 
-.. caution::
- After you re-run a course, modifications to the original course and the re-run
- course are independent. Changes to either course are not propagated to the
- other course. Therefore you should ensure that the original course content is
- as complete as possible before you re-run the course.
+After you re-run a course, modifications to the original course and the re-run
+course are independent. Changes to either course are not propagated to the
+other course. Therefore, you should ensure that the original course content is
+as complete as possible before you re-run the course.
 
 See :ref:`Use Re-Run to Create a Course<Use ReRun to Create a Course>` and
 :ref:`Update the New Course`.
@@ -179,4 +178,4 @@ course for launch.
   Changes you make in the new course are not propagated to the original course.
 
 .. _edge.edx.org: http://edge.edx.org
-.. _edx.org: http://edx.o
+.. _edx.org: http://edx.org
