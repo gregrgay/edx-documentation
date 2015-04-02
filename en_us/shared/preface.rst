@@ -150,7 +150,10 @@ Documentation for course teams is available on the docs.edx.org web page.
 
 These guides open in your web browser. The left side of each page includes a
 **Search docs** field and links to that guide's contents. To open or save a PDF
-version, click **v: latest** at the lower left of the page, then click **PDF**.
+version, click **v: latest** at the lower right of the page, then click **PDF**.
+
+.. note:: If you use the Safari browser, it does not support the search feature 
+ for the `edX documentation`_. This is a known limitation.
 
 Email
 -----
@@ -190,8 +193,11 @@ The `edX Research Guide`_ is available on the docs.edx.org web page.
 
 This guide opens in your web browser, with a **Search docs** field and links to
 that guide's contents on the left side of each page. To open or save a PDF
-version, click **v: latest** at the lower left of the page, and then click
+version, click **v: latest** at the lower right of the page, and then click
 **PDF**.
+
+.. note:: If you use the Safari browser, it does not support the search feature 
+ for the `edX documentation`_. This is a known limitation.
 
 Email
 -------
@@ -245,6 +251,9 @@ Documentation for developers is available on the docs.edx.org web page.
 
 * `edX Platform API`_ provides tools for building applications to view course
   information and videos.
+
+.. note:: If you use the Safari browser, it does not support the search feature 
+ for the `edX documentation`_. This is a known limitation.
 
 GitHub
 -------
@@ -318,6 +327,9 @@ release-specific documentation is available on docs.edx.org.
 
   When you are working in Studio, you can access relevant sections of this
   guide by clicking **Help** on any page.
+
+.. note:: If you use the Safari browser, it does not support the search feature 
+ for the `edX documentation`_. This is a known limitation.
 
 .. _Resources for Students:
 
@@ -412,3 +424,4 @@ edX Global Community meetup_ group.
 .. _Open edX Release Notes: http://edx.readthedocs.org/projects/open-edx-release-notes/en/latest/
 .. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/
 .. _docs@edx.org: docs@edx.org
+.. _edX documentation: http://docs.edx.org
