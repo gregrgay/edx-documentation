@@ -389,9 +389,12 @@ When using the visual editor, you can add any image that you have uploaded for
 the course to an HTML component. For more information about uploading images,
 see :ref:`Add Files to a Course`.
 
+Review :ref:`Best Practices for Describing Images` before you add images to
+HTML components.
+
 .. note:: 
- Review :ref:`Best Practices for Describing Images` before you add images to
- HTML components.
+ Ensure that you obtain copyright permissions for images you use in
+ your course, and that you cite sources appropriately.
 
 To add an image, you'll need the URL of the image that you uploaded to the
 course. You'll then create a link to the image in the HTML component.
