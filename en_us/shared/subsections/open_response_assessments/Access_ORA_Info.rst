@@ -117,7 +117,7 @@ window, and then click anywhere on the image that opens.
 .. _Remove a student response from peer grading:
 
 ************************************************
-Remove a student response from peer grading
+Remove a Student Response from Peer Grading
 ************************************************
 
 If you use open response assessments, students might alert you to vulgar,
@@ -183,26 +183,26 @@ Remove a submission from peer assessment by completing these steps.
 
 .. _Locate a specific ORA submission:
 
-*********************************************************
-Locate a specific student submission in an ORA assignment
-*********************************************************
+*************************************************
+Locate a Specific Submission in an ORA Assignment
+*************************************************
 
-If you are alerted to inappropriate ORA submissions that you want to cancel
+If you are alerted to an inappropriate ORA submission that you want to cancel
 and :ref:`remove from peer assessment<Remove a student response from peer
-grading>`, locate a specific submission by following these steps.
+grading>`, locate the specific submission by following these steps.
 
 #. Ask the person who reported the incident to send you a sample of text from
    the inappropriate post.
 
 #. Contact your edX program manager to request a data download of ORA
-   responses for the assignment.
+   responses for your course.
 
-   You will receive the download in a spreadsheet or .csv file format.
+   You will receive the download as a spreadsheet or in .csv file format.
 
 #. Search the spreadsheet for text that matches the sample text from the
    inappropriate post.
 
-#. From matching entries in the spreadsheet, locate the username of the
+#. From any matching entries in the spreadsheet, locate the username of the
    learner who posted the submission.
 
 #. Make a note of the username, and follow the steps to :ref:`remove a student
