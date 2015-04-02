@@ -19,10 +19,12 @@ To help you find what you need, browse the edX offerings in these categories:
 * `Resources for Course Teams`_
 * `Resources for Researchers`_
 * `Resources for Developers`_
+* `Resources for Open edX`_
 * `Resources for Students`_
 
 All members of the edX community are encouraged to make use of any of the
-resources described in this preface.
+resources described in this preface. We welcome your feedback on these edX
+information resources. Contact the edX documentation team at `docs@edx.org`_.
 
 .. _The edX Partner Portal:
 
@@ -162,8 +164,11 @@ To receive and share information by email, course team members can:
 * Join the `openedx-studio`_ Google group to ask questions and participate in
   discussions with peers at other edX partner organizations and edX staffers.
 
-Course Author Support
-----------------------
+Wikis and Web Sites
+-------------------
+
+The edX product team maintains the `Open edX Product`_ wiki, which includes the
+`Open edX Public Product Roadmap`_.
 
 The `edX Author Support`_ site hosts discussions that are monitored by edX
 staffers.
@@ -221,6 +226,10 @@ Documentation for developers is available on the docs.edx.org web page.
   contributing to Open edX, options for extending the Open edX platform, using
   the edX public sandboxes, instrumenting analytics, and testing.
 
+* `Installing, Configuring, and Running the edX Platform`_ provides procedures
+  for getting an edX developer stack (Devstack) and production stack
+  (Fullstack) operational.
+
 * XBlock_: Open edX courseware components provides preliminary documentation
   on the XBlock component architecture for building courses.
 
@@ -273,14 +282,19 @@ Additional Google groups are occasionally formed for individual projects.
 
 EdX engineers often monitor the Freenode #edx-code IRC channel.
 
-Pull Requests
+
+Wikis and Web Sites
 -------------------
+
+The code.edx.org web site_ is an entry point for new contributors.
+
+The edX Engineering team maintains the `Open Source Home`_ wiki, which provides
+insights into the plans, projects, and questions that the edX Open Source team
+is working on with the community.
 
 The pull request dashboard_  is a visualization of the count and age of the
 pull requests (PRs) assigned to teams at edX. Click the bars in this chart to
 get more information about the PRs.
-
-.. _Resources for Students:
 
 .. _Resources for Open edX:
 
@@ -305,6 +319,8 @@ release-specific documentation is available on docs.edx.org.
   When you are working in Studio, you can access relevant sections of this
   guide by clicking **Help** on any page.
 
+.. _Resources for Students:
+
 **************************
 Resources for Students
 **************************
@@ -313,7 +329,7 @@ Documentation
 -------------
 
 The `edX Guide for Students`_ is available on the docs.edx.org web page.
-Because students are not currently guided to this resource through the
+Because students are currently only guided to this resource through the
 courseware, we encourage course staff to provide links to students as needed
 in course updates or discussions.
 
@@ -395,3 +411,4 @@ edX Global Community meetup_ group.
 .. _open.edx.org/user/register: https://open.edx.org/user/register
 .. _Open edX Release Notes: http://edx.readthedocs.org/projects/open-edx-release-notes/en/latest/
 .. _Building and Running an Open edX Course: http://edx.readthedocs.org/projects/open-edx-building-and-running-a-course/en/named-release-birch/
+.. _docs@edx.org: docs@edx.org
