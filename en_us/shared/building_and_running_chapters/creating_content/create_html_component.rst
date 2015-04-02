@@ -403,20 +403,24 @@ course. You'll then create a link to the image in the HTML component.
     :alt: Image of the Insert image dialog box with a reference to a file
 
 4. Enter alternative text in the **Image description** field. This text becomes
-   the value of the ``alt`` attribute in HTML and is required for your course to
-   be fully accessible. See :ref:`Best Practices for Describing Images` for more
-   information.
+   the value of the ``alt`` attribute in HTML and is required for your course
+   to be fully accessible. See :ref:`Best Practices for Describing Images` for
+   more information.
 
 #. As needed, customize the image dimensions. Keep **Constrain proportions**
-   checked to ensure the image keeps the same width and height proportions.
+   checked to ensure the image keeps the same width and height proportions. 
+
+   With **Constrain proportions** selected, you only change one dimension. When
+   you tab out of the field, the other dimension changes to a value that
+   maintains the same image proportions.
 
 #. To change the spacing and border of the image, click the **Advanced** tab. 
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-Edit_Image_Advanced.png
     :alt: Image of the Insert image dialog box Advanced tab
 
-#. Enter the **Vertical space**, **Horizontal space**, and **Border** as needed.
-   The values you enter are automatically added to the **Style** field.
+#. Enter the **Vertical space**, **Horizontal space**, and **Border** as
+   needed. The values you enter are automatically added to the **Style** field.
 
 #. Click **OK** to insert the image in the HTML component.
 
@@ -478,8 +482,8 @@ To create an HTML component that contains LaTeX code:
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_LaTeX_CompEditor.png
     :alt: Image of the LaTeX component
 
-#. On the unit page, click **Preview** to verify that your content looks the way
-   you want it to in the LMS.
+#. On the unit page, click **Preview** to verify that your content looks the
+   way you want it to in the LMS.
 
    If you see errors, go back to the unit page. Click **Edit** to open the
    component again, and then click **Launch Latex Source Compiler** in the
