@@ -296,7 +296,6 @@ To add a link to a website:
 
 .. _Add a Link to a Course Unit:
 
-
 Add a Link to a Course Unit
 ***********************************
 
@@ -319,13 +318,20 @@ You can add a link to a course unit in an HTML component.
 
    ``/jump_to_id/<unit identifier>``
 
-   Make sure to replace <unit identifier> (including the brackets) with the unit
-   identifier that you copied in step 2, and make sure to include both forward slashes (/).
+   Make sure to replace <unit identifier> (including the brackets) with the
+   unit identifier that you copied in step 1, and make sure to include both
+   forward slashes (/).
 
    .. image:: ../../../shared/building_and_running_chapters/Images/HTML_Insert-EditLink_CourseUnit.png
     :alt: Image of the Insert link dialog box with a link to a unit identifier
 
-#. If you want the link to open in a new window, click the drop-down arrow next
+  .. caution::
+    Ensure you use ``/jump_to_id/<unit identifier>`` as the URL value. Do not
+    use the URL of the unit that you see in the browser address bar.  If you do
+    not use ``/jump_to_id/<unit identifier>``, the link will be broken if you
+    export then import the course.
+
+6. If you want the link to open in a new window, click the drop-down arrow next
    to the **Target** field, and then select **New Window**. If not, you can
    leave the default value.
 

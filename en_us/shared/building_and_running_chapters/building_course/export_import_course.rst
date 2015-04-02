@@ -9,6 +9,13 @@ You can :ref:`Export a Course` and :ref:`Import a Course` through Studio.
 To duplicate an existing course for a new run, course creators can use the
 course re-run option. See :ref:`Rerun a Course`.
 
+.. caution::
+  Before exporting and importing a course, ensure that links in the course to
+  other course content use the ``/jump_to_id/<unit identifier>`` syntax. If a
+  link does not use the ``/jump_to_id/<unit identifier>`` syntax, the link will
+  be broken if you export then import the course. For more information, see
+  :ref:`Add a Link to a Course Unit`.
+
 .. _Export a Course:
 
 ***************
@@ -68,7 +75,6 @@ There are several reasons you may want to import a course. For example:
 
 * To load a course you developed outside of Studio.
 * To run a new version of a course that was not created in Studio.
-
 
 The course that you import must be in a .tar.gz file (that is, a .tar file
 compressed with GNU Zip). This .tar.gz file must contain a course.xml file in a
