@@ -7,7 +7,7 @@ LTI Component
 You might have discovered or developed an external learning application that
 you want to add to your online course. Or you might have a digital copy of your
 textbook that uses a format other than PDF. You can add external learning
-applications or textbooks in Studio by using a Learning Tools Interoperability
+applications or textbooks in Studio by using a learning tools interoperability
 (LTI) component. The LTI component is based on the `IMS Global Learning Tools
 Interoperability <http://www.imsglobal.org/LTI/v1p1p1/ltiIMGv1p1p1.html>`_
 version 1.1.1 specifications.
@@ -52,8 +52,8 @@ unit, you need the following information.
 
      The LTI ID can contain uppercase and lowercase alphanumeric characters, as
      well as underscore characters (_). It can be any length. For example, you
-     may create an LTI ID that is as simple as **test_lti_id**, or your LTI ID
-     may be a string of numbers and letters such as  **id_21441** or
+     can create an LTI ID that is as simple as **test_lti_id**, or your LTI ID
+     can be a string of numbers and letters such as  **id_21441** or
      **book_lti_provider_from_new_york**.
   -  The **client key**. This value is a sequence of characters that you
      obtain from the LTI provider. The client key is used for
@@ -67,12 +67,12 @@ unit, you need the following information.
      **yt4984yr8**.
 
   To create the **LTI Passports** policy key, combine the LTI ID, client key,
-  and client secret in the following format (make sure to include the colons):
+  and client secret in the following format (make sure to include the colons).
 
   ``lti_id:client_key:client_secret``
 
-  For example, an **LTI Passports** policy key may resemble any of the
-  following:
+  For example, an **LTI Passports** policy key can resemble any of the
+  following.
 
   ``test_lti_id:b289378-f88d-2929-ctools.school.edu:secret``
   
@@ -131,7 +131,7 @@ key to the course's advanced settings.
 
 #. Enter the **LTI Passports** policy key surrounded by quotation marks.
 
-   For example, the text in the **LTI Passports** field may resemble the
+   For example, the text in the **LTI Passports** field can resemble the
    following.
 
    ``"test_lti_id:b289378-f88d-2929-ctools.umich.edu:secret"``
